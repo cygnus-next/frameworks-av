@@ -91,7 +91,6 @@ bool TimeCheck::TimeCheckThread::threadLoop()
         }
         if (status != NO_ERROR) {
             LOG_EVENT_STRING(LOGTAG_AUDIO_BINDER_TIMEOUT, tag);
-            LOG_ALWAYS_FATAL("TimeCheck timeout for %s", tag);
         }
     }
     return true;
